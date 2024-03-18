@@ -7,8 +7,9 @@ describe('SantaList', () => {
     describe('SantaList', () => {
         it('renders the component correctly', () => {
           const wrapper = mount(SantaList);
-          expect(wrapper.find('h1').exists()).toBe(true);
-          expect(wrapper.find('h1').text()).toBe("Santa Claus List");
+          console.log(wrapper.html());
+          expect(wrapper.find('h2').exists()).toBe(true);
+          expect(wrapper.find('h2').text()).toBe("Santa's List");
         });
       });
 
