@@ -1,15 +1,15 @@
 <script setup>
-
-import SantaClausList from "@/components/SantaClausList.vue";
 import AddToList from "@/components/AddToList.vue";
-const add = () => {
-  console.log("add");
-};
+import Header from "@/components/Header.vue";
+import SantaClausList from "@/components/SantaClausList.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-
-  <SantaClausList />
-  <AddToList @add="add()"/>
-
+  <main>
+    <Header />
+    <SantaClausList />
+    <AddToList />
+    <Footer />
+  </main>
 </template>
