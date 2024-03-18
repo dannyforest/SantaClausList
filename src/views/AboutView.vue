@@ -11,7 +11,7 @@
       coke - i mean checks notes capitalism. When it comes to the white, it is
       obviously beccause each and every one of us are as pure and good as snow,
       never did we do any wrong in our life, and whoever says otherwise is a
-      liar and should be getting charcal. Merry xmas ~
+      liar and should be getting charcol. Merry xmas ~
     </h1>
   </div>
 </template>
