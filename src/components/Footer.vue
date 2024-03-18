@@ -1,62 +1,103 @@
-<script setup="ts">
-
-</script>
-
-<template>
+  <template>
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h5 class="mb-4">Informations de contact</h5>
-            <p>Adresse: 123 Rue de la Vue, Ville, Pays</p>
-            <p>Téléphone: +123 456 789</p>
-            <p>Email: info@monsite.com</p>
-          </div>
-          <div class="col-md-6">
-            <h5 class="mb-4">Liens utiles</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-dark">Accueil</a></li>
-              <li><a href="#" class="text-dark">À propos</a></li>
-              <li><a href="#" class="text-dark">Services</a></li>
-              <li><a href="#" class="text-dark">Contact</a></li>
-            </ul>
-          </div>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h5 class="footer-title">Informations de contact</h5>
+          <p>Adresse: 123 Rue de la Vue, Ville, Pays</p>
+          <p>Téléphone: +123 456 789</p>
+          <p>Email: info@monsite.com</p>
+        </div>
+        <div class="footer-column">
+          <h5 class="footer-title">Liens utiles</h5>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Accueil</a></li>
+            <li><a href="#" class="footer-link">À propos</a></li>
+            <li><a href="#" class="footer-link">Services</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5 class="footer-title">Réseaux sociaux</h5>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Facebook</a></li>
+            <li><a href="#" class="footer-link">Twitter</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+            <li><a href="#" class="footer-link">Instagram</a></li>
+          </ul>
         </div>
       </div>
-      <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <p class="mb-0 text-muted">© {{ new Date().getFullYear() }} MonSite.com. Tous droits réservés.</p>
+      <div class="footer-bottom">
+        <p class="footer-text">© {{ new Date().getFullYear() }} MonSite.com. Tous droits réservés.</p>
       </div>
     </footer>
   </template>
-
+  
+  <script>
+  export default {
+    name: 'Footer',
+  };
+  </script>
+  
   <style scoped>
   .footer {
-    background-color: #f8f9fa;
-    color: #333;
-    padding: 30px 0;
-    margin-top: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
   }
-
-  .footer h5 {
-    color: #333;
-    font-weight: bold;
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
   }
-
-  .footer ul {
-    list-style-type: none;
-    padding: 0;
+  
+  .footer-column {
+    flex: 1;
+    padding: 0 20px;
   }
-
-  .footer ul li {
+  
+  .footer-title {
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
-
-  .footer a {
-    color: #333;
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: white;
     text-decoration: none;
   }
-
-  .footer a:hover {
-    text-decoration: underline;
+  
+  .footer-link:hover {
+    color: #007bff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    color: black !important;
+    background-image: linear-gradient(
+    to right,
+    green,
+    white,
+    red,
+    green,
+    white,
+    red,
+    green,
+    white,
+    red
+  );
+    padding: 10px 0;
+  }
+  
+  .footer-text {
+    color: white;
+    margin: 0;
   }
   </style>
