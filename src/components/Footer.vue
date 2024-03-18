@@ -95,7 +95,6 @@
   );
     padding: 10px 0;
   }
-  
   .footer-text {
     color: white;
     margin: 0;
