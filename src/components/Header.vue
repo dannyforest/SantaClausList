@@ -26,10 +26,10 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
           <li class="nav-item">
-            <div class="nav-link">Home</div>
+            <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
-            <div class="nav-link">About Us</div>
+            <router-link to="/about" class="nav-link">About Us</router-link>
           </li>
         </ul>
         <div class="text-center">
