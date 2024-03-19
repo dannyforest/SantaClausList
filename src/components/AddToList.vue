@@ -25,7 +25,7 @@ const addGift = () => {
         <div class="form-footer">
         <label for="naughty">Naughty?</label>
         <input v-model="naughty" type="checkbox" required name="naughty"></input>
-        <button id="submit" class='btn' type="submit">add</button>
+        <button id="submit" class='btn-dark' type="submit">add</button>
         </div>
     </form>
 </template>
